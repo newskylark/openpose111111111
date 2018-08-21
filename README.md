@@ -1,22 +1,19 @@
-# killyou
-神经网络
-概念
-神经网络是一种数学模型，是在于计算机的神经系统，有大量的神经元相连接并进行计算。。在外界信息的刺激下，改变内部的结构，常用来输入和雏鼠键复杂的关系第进行建模。
+Human pose estimation from monocular images： A comprehensive survey
 
-Input layer        负责接收信息
-Hidden layer       隐藏层就是对输入信息的加工处理
-Output layer       对输入信息的认知和判断
+Human pose estimation
+Pose estimation is a general problem in computer vision where we detect the position and orientation of an object.it means detecting key point locations that describe the object.
+ In this essay, we will focus on human pose estimation, where is required to detect and localize. besides the head.
+human has divide to movement, action, activity. by Turaga.
+Several types image can be captured:
+ RGB or gray scale images, infrared images ,depth images,.
 
-神经网络如何训练
-通过不断的输入数据，来一遍遍用错误的结果和正确的结果来刺激和训练神经元，达到让所有的神经元的参数都被改变，让他们变得对重要的信息更加敏感。
+Human estimation problem specific characteristics.
+1.human body has high degrees of freedom, leading to a high-dimensional solution space
+2.the complex structure and flexibility of human body parts causes partially occluded human poses which are extremely hard to recognize;
+3.depth loss resulting from 3d pose projections to 2d image planes makes the estimation of 3d poses extremely difficult.
 
-Tensorflow 谷歌开发的深度学习系统，用来做分类，拟合问题，模拟模式。
+Methodologies
 
-基本原理
+According to the previous works. There are two main ways of categorizing human pose estimation algorithms.
+Based on whether human pose estimation is modeled as a geometric projection or is treated as a speciﬁc image processing problem, related works can be classiﬁed into two main groups: generative methods or discriminative methods
 
-Optimization优化问题
-优化能力是人类史商最重大的突破，他解决了很多实际生活中的问题。
-比如说 newton’s method, least squares method, gradient descent.
-
-神经网络就属于梯度下降的这个分支中的一个。
-神经网络入门方程：误差方程 loss function
